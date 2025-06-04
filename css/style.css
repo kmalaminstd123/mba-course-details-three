@@ -1,0 +1,869 @@
+/*global css start*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+}
+
+ol,
+li {
+    list-style-type: none;
+}
+
+/*global css end*/
+
+/* Theme Colors */
+:root {
+    --primary-blue: #245166;
+    --accent-red: #A03232;
+    --support-brown: #716126;
+}
+
+/* Theme Colors */
+
+
+
+/* Add this to your existing CSS */
+
+
+
+@media only screen and (max-width: 992px) {}
+
+@media only screen and (max-width: 768px) {}
+
+
+
+
+.card-img-wrapper {
+    --wrapper-size: 55px;
+    height: var(--wrapper-size);
+    width: var(--wrapper-size);
+    border: 2px solid #265367;
+    border-radius: 50%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 2;
+    background-color: #fff;
+}
+
+.card-img-wrapper::before {
+    content: '';
+    position: absolute;
+    --elm-size: 60px;
+    height: var(--elm-size);
+    width: var(--elm-size);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    z-index: -1;
+}
+
+.card-img-wrapper img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.higher-faq-sec .accordion-button::after {
+    display: none;
+}
+
+.higher-faq-sec .accordion-button:not(.collapsed) {
+    color: #fff;
+    font-weight: bold;
+    background-color: var(--primary-blue);
+}
+
+.higher-faq-sec .accordion-body {
+    margin-top: 10px;
+    background-color: #fff;
+}
+
+.higher-faq-sec .accordion-header {
+    border-radius: 10px;
+    overflow: hidden;
+    border: 2px solid var(--support-brown);
+}
+
+.higher-faq-sec .accordion-button {
+    padding: 25px 40px;
+}
+
+.broch-btn {
+    background-color: #2a5266;
+    border-radius: 40px;
+    color: #fff;
+    padding: 10px 20px;
+}
+
+.broch-btn:hover {
+    background-color: #2a5266;
+    color: #fff;
+}
+
+/* course feature part design start */
+
+.course-feature-b-card {
+    border-radius: 8px;
+    position: relative;
+}
+
+.flyer-img-card {
+    position: absolute;
+    bottom: -9%;
+    right: -18%;
+    max-width: 285px;
+    width: 100%;
+    height: 295px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+@media only screen and (max-width: 727px) {
+    .course-feature-b-card {
+        width: 88.1% !important;
+    }
+}
+
+/* @media only screen and (max-width: 590px){
+    .course-feature-b-card{
+        width: 70% !important;
+    }
+} */
+
+.exp-cont {
+    position: absolute;
+    bottom: -10%;
+    left: 0;
+}
+
+.exp-cont a {
+    width: fit-content;
+    padding: 23px 80px;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+    position: relative;
+    overflow: hidden;
+}
+
+.exp-cont a::after {
+    content: '';
+    height: 100%;
+    width: 0%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: var(--primary-blue);
+    z-index: 1;
+    transition: all 0.6s linear;
+}
+
+.exp-cont a:hover::after {
+    width: 100%;
+    transition: all 0.6s linear;
+}
+
+.exp-cont a span:nth-child(2) {
+    position: relative;
+    z-index: 2;
+    color: #000;
+    transition: all 0.6s linear;
+}
+
+.exp-cont a:hover span:nth-child(2) {
+    color: #fff;
+    transition: all 0.6s linear;
+}
+
+
+
+.exp-cont a span:nth-child(1) {
+    position: absolute;
+    left: 2%;
+    transform: translateX(0);
+    z-index: 2;
+    transition: all 0.6s linear;
+    opacity: 0;
+}
+
+.exp-cont a:hover span:nth-child(1) {
+    transform: translateX(250px);
+    color: #fff;
+    transition: all 0.6s linear;
+    opacity: 1;
+}
+
+.course-feature-broch-img {
+    height: 100%;
+    object-fit: cover;
+}
+
+.feature-borc-text {
+    background-color: #2a5266;
+    height: 100%;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.feature-borc-text h2 {
+    color: #fff;
+    border-left: 5px solid var(--support-brown);
+    padding-left: 15px;
+    line-height: 1.4;
+    font-weight: bold;
+    font-size: 23px;
+}
+
+.feature-borc-text p {
+    color: #fff;
+    font-size: 16px;
+    margin-top: 10px;
+    line-height: 1.6;
+    font-weight: 500;
+}
+
+.cfbl-header h3 {
+    font-size: 30px;
+    font-weight: 700;
+    color: var(--primary-blue);
+    border-left: 4px solid var(--support-brown);
+    padding-left: 10px;
+    margin-bottom: 20px;
+}
+
+.cfbl-sub-header p {
+    color: var(--accent-red);
+    font-size: 18px;
+    opacity: 0.8;
+    font-weight: 500;
+}
+
+.feat-card-parent {
+    margin-bottom: 11px;
+}
+
+.program-feature-card {
+    background-color: #fff;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease-in-out;
+    /* subtle slide down */
+}
+
+
+.program-feature-card:hover {
+    transform: scale(1.1);
+    transition: all 0.3s ease-in-out;
+}
+
+.program-feature-card .l-s-card img {
+    height: 40px;
+}
+
+.l-s-card {
+    background-color: var(--primary-blue);
+    border-radius: 5px;
+    padding: 10px 15px;
+    color: #fff;
+}
+
+.program-feature-card .r-s-card h4 {
+    font-size: 16px;
+    color: var(--primary-blue);
+}
+
+.r-s-card {
+    margin-left: 30px;
+}
+
+.program-feature-card .r-s-card p {
+    color: var(--support-brown);
+}
+
+/* course feature part design end */
+
+
+/* how to apply section start */
+
+.apply-step-box-left {
+    position: relative;
+}
+
+.apply-header-box,
+.apply-header-box2 {
+    border: 2px solid var(--support-brown);
+    border-radius: 8px;
+    padding: 15px 20px;
+    margin-bottom: 30px;
+    position: relative;
+    transition: all 0.3s ease-in-out;
+}
+
+.apply-header-box2 {
+    margin-top: 35px;
+}
+
+
+.apply-header-box2:hover,
+.apply-header-box:hover {
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 15px 35px rgba(117, 113, 113, 0.3);
+    background-color: #fff;
+}
+
+.apply-header-box2 h4,
+.apply-header-box h4 {
+    color: #fff;
+}
+
+.apply-header-box2 p,
+.apply-header-box p {
+    text-align: center;
+    color: #1a1519;
+    font-size: 19px;
+    line-height: 1.6;
+}
+
+.ahb-icon {
+    background-color: var(--primary-blue);
+    backdrop-filter: blur(10px);
+    width: fit-content;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #fff;
+}
+
+.hovered-app-box {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--primary-blue);
+    padding: 8px 20px;
+    border-radius: 10px;
+    transition: all 0.5s ease;
+    display: none;
+    animation: fadeInup 1s ease;
+}
+
+.hovered-app-box p {
+    color: #fff !important;
+}
+
+@keyframes fadeInup {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.hovered-app-box p {
+    color: #333;
+    font-weight: 500;
+}
+
+.apply-header-box:hover .hovered-app-box {
+    display: block;
+}
+
+.apply-step-box-left::after {
+    --circle-size: 36px;
+    content: '';
+    position: absolute;
+    top: 0;
+    right: calc(-1 * var(--circle-size) / 2);
+    height: var(--circle-size);
+    width: var(--circle-size);
+    background-color: #8f653b;
+    border-radius: 50%;
+    z-index: 8;
+    transition: all 0.4s ease;
+}
+
+
+
+.apply-step-box-right {
+    position: relative;
+    padding-left: 30px;
+}
+
+.apply-step-box-right::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 5px;
+    background-color: var(--primary-blue);
+}
+
+/* Animate the right side on hover of the left */
+.apply-step-single-box:hover .apply-step-box-right {
+    /* transform: translateX(10px); */
+    transition: all 0.4s ease;
+    padding-left: 50px;
+    box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* Optional: glow or border highlight on hover */
+.apply-step-single-box:hover .apply-step-box-right::after {
+    background-color: var(--support-brown);
+    /* highlight bar change */
+    transition: all 0.4s ease;
+}
+
+
+@media only screen and (max-width: 960px) {
+    .apply-step-box-left h5 {
+        font-size: 14px;
+    }
+
+    .apply-step-box-right h5 {
+        font-size: 18px;
+    }
+
+    .apply-step-box-right p {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+
+    .apply-step-box-left::after {
+        right: auto;
+        top: 40px;
+        left: -15px;
+    }
+
+    .apply-step-single-box:not(.apply-step-single-box:first-child) {
+        margin-top: 50px;
+    }
+}
+
+/* how to apply section end */
+
+
+
+/* ============== entry requirement section start ============== */
+
+#entry-req-sec {
+    min-height: 100vh;
+}
+
+.left-req-sec {
+    position: sticky;
+    top: 0;
+    min-height: 100vh;
+    background: url('./images/req-bg-left.jpg') center/cover no-repeat;
+}
+
+.right-req-sec {
+    max-height: 100vh;
+    overflow-y: auto;
+    padding: 80px 50px 80px;
+    background-color: #f8f9fa;
+    scroll-behavior: smooth;
+}
+
+@media screen and (max-width: 768px) {
+    .right-req-sec {
+        height: auto;
+    }
+}
+
+.entry-check-mark {
+    border: 0.5px solid var(--primary-blue);
+    border-radius: 50%;
+    --check-size: 30px;
+    height: var(--check-size);
+    width: var(--check-size);
+    color: var(--primary-blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+}
+
+/* optional pretties */
+.right-req-sec::-webkit-scrollbar-thumb {
+    background: var(--support-brown);
+}
+
+.right-req-sec::-webkit-scrollbar-track {
+    background: #e7e7e7;
+}
+
+
+.right-req-sec::-webkit-scrollbar {
+    width: 10px;
+    /* width of the scrollbar */
+}
+
+.right-req-sec::-webkit-scrollbar-track {
+    background: #e0e0e0;
+    /* background of the track */
+    border-radius: 8px;
+}
+
+.right-req-sec::-webkit-scrollbar-thumb {
+    background: #8f653b;
+    /* the scroll "thumb" */
+    border-radius: 8px;
+    border: 2px solid #f8f9fa;
+    /* gives it padding feel */
+}
+
+.right-req-sec::-webkit-scrollbar-thumb:hover {
+    background: #70512f;
+    /* darker on hover */
+}
+
+/* ============== entry requirement section end ============== */
+
+
+/* stepper css start */
+
+#stepperSec {
+    margin: 80px 0;
+}
+
+.stepper-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    max-width: 900px;
+    width: 100%;
+    margin: auto;
+}
+
+.step {
+    flex: 1;
+    text-align: center;
+    position: relative;
+    cursor: pointer;
+}
+
+.step::before {
+    content: "";
+    position: absolute;
+    top: 25px;
+    left: 100%;
+    width: 100%;
+    height: 4px;
+    background: #b0c4cf;
+    z-index: 0;
+    transform: translateX(-50%);
+}
+
+.step:last-child::before {
+    display: none;
+}
+
+.circle {
+    width: 50px;
+    height: 50px;
+    background-color: var(--primary-blue);
+    color: white;
+    font-size: 20px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    position: relative;
+    z-index: 2;
+}
+
+.step-title {
+    margin-top: 10px;
+    color: var(--accent-red);
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+#stepperSec .stepper-content-box {
+    border-color: var(--primary-blue);
+}
+
+.stepper-content-box {
+    max-width: 700px;
+    margin: 30px auto;
+    padding: 20px;
+    border: 2px solid #ccc;
+    display: none;
+}
+
+.stepper-content-box.active {
+    display: block;
+}
+
+/* stepper css end */
+
+.cours-obj-cont p {
+    font-size: 21px;
+    color: var(--primary-blue);
+}
+
+.prog-act {
+    color: #fff;
+    padding: 10px 20px;
+    font-weight: 500;
+    background-color: var(--primary-blue);
+    border: none;
+    border: 1px solid var(--primary-blue);
+}
+
+.prog-act:hover {
+    color: #fff;
+    background-color: var(--primary-blue);
+}
+
+
+/* ======================= */
+
+
+/* course details and objective css start */
+
+.section-title {
+    color: #716126;
+    position: relative;
+    display: inline-block;
+    margin-bottom: 2rem;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60%;
+    height: 3px;
+    background: linear-gradient(90deg, #245166, #716126);
+    border-radius: 2px;
+}
+
+.course-obj-sec {
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+.cours-obj-cont ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.cours-obj-cont ul li {
+    position: relative;
+    padding: 12px 0 12px 35px;
+    border-bottom: 1px solid rgba(113, 97, 38, 0.1);
+}
+
+.cours-obj-cont ul li::before {
+    content: '→';
+    position: absolute;
+    left: 0;
+    color: #245166;
+    font-weight: bold;
+}
+
+.cours-obj-cont ul li:hover {
+    background: linear-gradient(90deg, rgba(36, 81, 102, 0.05), transparent);
+    transform: translateX(10px);
+    transition: all 0.3s ease;
+}
+
+.highlight-text {
+    color: #245166;
+    font-weight: 500;
+    padding: 2px 8px;
+    background: rgba(36, 81, 102, 0.1);
+    border-radius: 4px;
+}
+
+.course-obj-modern {
+    padding: 35px 0 35px 0;
+    background: #ffffff;
+}
+
+/* Shared visual left */
+
+
+
+.featured-objective-card {
+    background: linear-gradient(45deg, var(--primary-blue), #0056b3);
+    /* Primary blue gradient */
+    /* You can replace this with an image */
+    /* background-image: url('path/to/your/feature-image.jpg'); */
+    /* background-size: cover; */
+    /* background-position: center; */
+}
+
+.obj-timeline-container {
+    position: relative;
+    padding-left: 30px;
+    /* Space for the vertical line */
+}
+
+.obj-timeline-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 10px;
+    /* Adjust to align with icons */
+    width: 2px;
+    height: 100%;
+    background-color: #dee2e6;
+    /* Light gray line */
+}
+
+.obj-timeline-item {
+    position: relative;
+}
+
+.timeline-icon {
+    z-index: 1;
+    /* Ensure icon is above the line */
+    background-color: #f8f9fa;
+    /* Match section background */
+    border-radius: 50%;
+    padding: 8px;
+    /* Padding around the icon */
+    box-shadow: 0 0 0 4px #fff;
+    /* White ring around icon */
+}
+
+.obj-timeline-content {
+    position: relative;
+}
+
+.obj-timeline-content::before {
+    position: absolute;
+    top: 50%;
+    left: -25px;
+    transform: translateY(-50%);
+    content: '';
+    --size: 12px;
+    height: var(--size);
+    width: var(--size);
+    background-color: var(--primary-blue);
+    border-radius: 50%;
+}
+
+.badge {
+    font-size: 15px;
+}
+
+
+/* Program Goals section */
+.program-goals {
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+}
+
+.goal-item {
+    position: relative;
+    padding: 20px 10px;
+    margin-bottom: 15px;
+    border-left: 4px solid var(--primary-blue);
+    background: #fff;
+    transition: all 0.3s ease;
+}
+
+.goal-item:hover {
+    transform: translateX(10px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.goal-number {
+    position: absolute;
+    top: -15px;
+    left: -15px;
+    background: var(--primary-blue);
+    color: #fff;
+    --circle-size: 35px;
+    width: var(--circle-size);
+    height: var(--circle-size);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.goal-item h3 {
+    color: var(--primary-blue);
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+
+.goal-item p {
+    color: #666;
+    margin-bottom: 0;
+    line-height: 1.6;
+}
+
+@media only screen and (max-width: 992px) {
+    .det-card-mt {
+        margin-top: 40px;
+    }
+}
+
+@media (max-width: 768px) {
+    .goal-item {
+        margin-bottom: 2rem;
+    }
+
+    .course-featrue-b-list {
+        margin-top: 75px;
+    }
+
+    .det-card-mt-md {
+        margin-top: 20px;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .step-title {
+        font-size: 11px;
+    }
+}
+
+/* course details and objective css end */
+
+
+/* details section start =========  */
+
+.details-icon {
+    background-color: var(--primary-blue);
+}
+
+/* scroll system */
+
+
+
+/* details section end */

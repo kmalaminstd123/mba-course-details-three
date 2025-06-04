@@ -1,0 +1,1483 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- bootstrap cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <!-- bootstrap cdn -->
+
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- font awesome cdn -->
+
+    <!-- swiper cdn -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <!-- swiper cdn -->
+
+    <link rel="stylesheet" href="./css/style.css">
+
+    <title>Document</title>
+
+
+    <style>
+
+ .main_container {
+  display: flex;
+  height: 100vh;
+  overflow: hidden; /* Important to keep layout fixed height */
+}
+
+.sidebar {
+  width: 200px;
+  background-color: #f1f1f1;
+  overflow-y: auto;
+  padding: 1rem;
+}
+
+#menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#menu li {
+  padding: 10px;
+  cursor: pointer;
+  margin-bottom: 8px;
+  border-radius: 6px;
+  transition: background 0.3s;
+}
+
+#menu li.active {
+  background-color: #265367;
+  color: white;
+}
+
+.content {
+  flex-grow: 1;
+  overflow-y: auto; /* ✅ scrollable */
+  scroll-behavior: smooth;
+  padding: 1rem;
+  height: 100vh;
+}
+
+.section {
+  height: 100vh;
+  padding: 2rem;
+  border-bottom: 1px solid #ddd;
+  box-sizing: border-box;
+}
+    </style>
+
+  
+
+</head>
+
+<body>
+
+    <!-- feature section start -->
+
+    <section id="course-feature" style=" padding: 90px 0;">
+
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col-md-6 col-sm-12">
+
+                    <div class="course-feature-b-card" style="background-image: url('https://themexriver.com/wp/kadu/wp-content/uploads/2024/05/kd-a1-img-1.webp'); background-size: cover; background-position: center; background-repeat: no-repeat; min-height: 550px; width: 100%;">
+                        <div class="row g-0">
+
+                            <div class="flyer-img-card">
+                                <img class="course-feature-broch-img" src="./images/flyer.png" alt="">
+                            </div>
+
+                            <div class="exp-cont">
+                                <a href="#" class="d-block bg-white shadow"><span><i class="fa-solid fa-chevron-right"></i></span> <span>Contact With Experts</span></a>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    
+
+                </div>
+
+                <div class="col-md-6 col-sm-12">
+                    <div class="course-featrue-b-list">
+
+                        <div class="cfbl-header card-header">
+                            <h3>Master of Social Science in Human Rights & Gender Studies (MSSHRGS)</h3>
+                        </div>
+
+                        <div class="cfbl-sub-header">
+                            <p>Empowering future leaders in justice, equality, and social impact.</p>
+                        </div>
+
+                            <div class="row justify-content-center gap-3">
+
+                                <div class="col-md-8 col-sm-12">
+                                    <div class="program-feature-card d-flex align-items-center gap-2 py-2 px-3 rounded-2">
+                                         <div class="l-s-card">
+                                             <i class="fa-solid fa-money-check-dollar"></i>
+                                         </div>
+                                         <div class="r-s-card">
+                                             <h4 class="mb-0">Regular Fee</h4>
+                                             <p class="mb-0">&euro; 1999.00</p>
+                                         </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-8 col-sm-12">
+                                    <div class="program-feature-card rounded-2 d-flex align-items-center gap-2 py-2 px-3">
+                                        <div class="l-s-card">
+                                            <i class="fa-solid fa-graduation-cap"></i>
+                                        </div>
+                                        <div class="r-s-card">
+                                            <h4 class="mb-0">Partial Scholarship</h4>
+                                            <p class="mb-0">Available</p>
+                                        </div>
+                                    </div>
+                                </div>                               
+
+                                <div class="col-md-8 col-sm-12">
+                                    <div class="program-feature-card rounded-2 d-flex align-items-center gap-2 py-2 px-3">
+                                        <div class="l-s-card">
+                                            <i class="fa-solid fa-calendar-days"></i>
+                                        </div>
+                                        <div class="r-s-card">
+                                            <h4 class="mb-0">Intake</h4>
+                                            <p class="mb-0">Monthly Intake</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-8 col-sm-12">
+                                    <div class="program-feature-card rounded-2 d-flex align-items-center gap-2 py-2 px-3">
+                                        <div class="l-s-card">
+                                            <i class="fa-solid fa-clock"></i>
+                                        </div>
+                                        <div class="r-s-card">
+                                            <h4 class="mb-0">Programme Duration</h4>
+                                            <p class="mb-0">12 to 18 Months</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-8 col-sm-12">
+                                    <div class="program-feature-card rounded-2 d-flex align-items-center gap-2 py-2 px-3">
+                                        <div class="l-s-card">
+                                            <i class="fa-solid fa-message"></i>
+                                        </div>
+                                        <div class="r-s-card">
+                                            <h4 class="mb-0">Live Chat</h4>
+                                            <p class="mb-0">Available</p>
+                                        </div>
+                                    </div>
+                                </div>  
+                               
+                            </div>
+                        
+
+                        <div class="prog-btns position-static z-3 d-flex justify-content-center w-100 gap-3 mt-5 flex-wrap gap-sm-2">
+                                <button class="btn prog-act"><i class="fa-solid fa-circle-info"></i> Request Info</button>
+                                <button class="btn prog-act"><i class="fa-solid fa-circle-arrow-down"></i> Download Brochure</button>
+                        </div>
+
+                        
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- feature section end -->
+
+
+    <div id="secMainHe text-center">
+        <h1 class="text-center fs-1 fw-bold" style="color: #265367;">Everything you need to Know</h1>
+    </div>
+
+
+    <!-- part course objective , program goals, course intro -->
+    <section class="course-details">
+
+        <div class="course-intro-sec" style="padding: 20px 0 20px 0;">
+
+            <!-- course introduction -->
+            
+                <div class="container">
+                    <div class="mb-5">
+                        
+                        <p style="text-align: justify;">The <span style="font-weight: 500;">Master of Business Administration (M.B.A.)</span> program is designed to equip you with essential modern management knowledge, skills and tools to ensure your mindset, skill set and application ability for the business growth and sustainability.  This MBA programme is accredited by our academic partner universities which  are one of the best in class in the global education. Our MBA Graduates are highly confident on the business management along with the subject matter socialization to contribute to the organization for its growth.</p>
+        
+                        <p>Corporates also appoint our MBA graduate with hoe and confidence for their professional skill set and business centric mentality. In this course you will study and learn modern tools and techniques on the particular subject along with business areas. The curriculum has been developed by a pool of industry expert on the particular area with their expert contribution in the respective field.</p>
+                    </div>
+        
+                </div>
+
+        </div>
+
+
+        <!-- Course Objective -->
+        <section class="program-objective-timeline py-5 bg-light">
+            <div class="container">
+                <h2 class="text-center fw-bold fs-1 mb-5" style="color: #265367;">Program Objective</h2>
+
+                <div class="row align-items-center g-5">
+                    <div class="col-lg-5 col-md-12 mb-4 mb-lg-0">
+                        <div class="featured-objective-card bg-primary text-white rounded-3 shadow-lg p-5 text-center">
+                            <i class="fa-solid fa-rocket fa-4x mb-4"></i>
+                            <h3 class="fw-bold mb-3">Launch Your Business Expertise</h3>
+                            <p class="lead mb-0">This program is engineered to fast-track your capabilities in **modern management and strategic decision-making**, turning ambition into actionable success.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-7 col-md-12">
+                        <div class="obj-timeline-container">
+                            <div class="obj-timeline-item d-flex align-items-start mb-4">
+                                
+                                <div class="obj-timeline-content flex-grow-1">
+                                    <h5 class="mb-1">To enable delegates for business centric mentality</h5>
+                                </div>
+                            </div>
+
+                            <div class="obj-timeline-item d-flex align-items-start mb-4">
+                                
+                                <div class="obj-timeline-content flex-grow-1">
+                                    <h5 class="mb-1">To ensure the learning of business acumen and its application</h5>
+                                </div>
+                            </div>
+
+                            <div class="obj-timeline-item d-flex align-items-start mb-4">
+                                
+                                <div class="obj-timeline-content flex-grow-1">
+                                    <h5 class="mb-1">To learn modern management technique</h5>
+                                </div>
+                            </div>
+
+                            <div class="obj-timeline-item d-flex align-items-start mb-4">
+                            
+                                <div class="obj-timeline-content flex-grow-1">
+                                    <h5 class="mb-1">To enable the skills set of delegate for application of their learning</h5>
+                                </div>
+                            </div>
+
+                            <div class="obj-timeline-item d-flex align-items-start mb-4">
+                                
+                                <div class="obj-timeline-content flex-grow-1">
+                                    <h5 class="mb-1">To equip delegates for applying different tools in their workplace</h5>
+                                </div>
+                            </div>
+
+                            <div class="obj-timeline-item d-flex align-items-start mb-4">
+                                
+                                <div class="obj-timeline-content flex-grow-1">
+                                    <h5 class="mb-1">To accelerate individual career through globally recognized higher level certification</h5>
+                                </div>
+                            </div>
+
+                            <div class="obj-timeline-item d-flex align-items-start">
+                                
+                                <div class="obj-timeline-content flex-grow-1">
+                                    <h5 class="mb-1">To make delegates more analytical and to make them capable for business decisions</h5>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Program Goals -->
+        <div class="program-goals" style="padding: 35px 0; background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);">
+            <div class="container">
+                <!-- Header Section -->
+                <div class="section-header text-center mb-5">
+                    <h4 class="fs-1 fw-bold" style="font-size: 1.4rem; color: #265367;">Program Goals</h4>
+                    <p class="lead text-muted">Preparing Future Leaders for Global Success</p>
+                </div>
+
+                <!-- Goals Content -->
+                <div class="goals-content">
+                    <div class="row g-3">
+
+                        <div class="col-md-6">
+                            <div class="goal-item">
+                                <span class="goal-number">01</span>
+                                
+                                <p>Essential & modern management skills for playing role as managerial level</p>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-6">
+                            <div class="goal-item">
+                                <span class="goal-number">02</span>
+                                
+                                <p>Master financial analysis and decision-making for effective resource management</p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="goal-item">
+                                <span class="goal-number">03</span>
+                                
+                                <p>Gain international business insights and cross-cultural management skills</p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="goal-item">
+                                <span class="goal-number">04</span>
+                                
+                                <p>Foster innovative thinking and digital transformation capabilities</p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="goal-item">
+                                <span class="goal-number">05</span>
+                                
+                                <p>Develop advanced strategic thinking and management capabilities for organizational leadership</p>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-6">
+                            <div class="goal-item">
+                                <span class="goal-number">06</span>
+                                
+                                <p>Master financial analysis and decision-making for effective resource management</p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="goal-item">
+                                <span class="goal-number">07</span>
+                                
+                                <p>Gain international business insights and cross-cultural management skills</p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="goal-item">
+                                <span class="goal-number">08</span>
+                                
+                                <p>Foster innovative thinking and digital transformation capabilities</p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="goal-item">
+                                <span class="goal-number">09</span>
+                                
+                                <p>Develop advanced strategic thinking and management capabilities for organizational leadership</p>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-6">
+                            <div class="goal-item">
+                                <span class="goal-number">10</span>
+                                <p>Master financial analysis and decision-making for effective resource management</p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="goal-item">
+                                <span class="goal-number">11</span>
+                                <p>Gain international business insights and cross-cultural management skills</p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="goal-item">
+                                <span class="goal-number">12</span>
+                                <p>Foster innovative thinking and digital transformation capabilities</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+    </section>
+    <!-- part course objective , program goals, course intro -->
+
+
+    <!-- entry requirement section start -->
+
+    <h2 style="color: #265367; background-color: #f8f9fa;" class="fw-bold text-center fs-1 pt-5 pb-5 mb-0">Entry Requirements and Eligibility</h2>
+    <section style="background-color: #f8f9fa;" id="entry-req-sec">
+
+        <!-- Entry Requirements -->
+        <div class="req-part-design">
+
+            <div class="container-fluid g-0">
+
+                
+
+                <div class="row g-0">
+
+                    <div class="col-md-6 col-sm-12">
+                        <div class="left-req-sec" style="background-image: url('./images/req-bg-left.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat; position: sticky; top: 0; height: 100vh;">
+                            
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-sm-12">
+
+                        <div class="right-req-sec pt-5">
+
+                            <div class="right-req-sec-m-h">
+                                
+
+                                <div class="row">
+                                    <div class="col-12 mb-5">
+                                        <h3 class="d-flex gap-3 mt-4"><span>Entry Requirements:</span></h3>
+
+                                        <p class="d-flex gap-3 align-items-center"><span class="entry-check-mark"><i class="fa-solid fa-check"></i></span> <span>Recognized Bachelor Degree in any field or Recognized Post Graduate Diploma (PGD).</span></p>
+
+                                        <p class="d-flex gap-3 align-items-center"><span class="entry-check-mark"><i class="fa-solid fa-check"></i></span> <span>Sufficient English language proficiency.</span></p>
+
+                                        <p class="d-flex gap-3 align-items-center"><span class="entry-check-mark"><i class="fa-solid fa-check"></i></span> <span>At least 1 year of working experience.</span></p>
+
+                                        <p class="d-flex gap-3 align-items-center"><span class="entry-check-mark"><i class="fa-solid fa-check"></i></span> <span>Participants must have the facility of smart phone or laptop or computer to maintain the program activity.</span></p>
+                                    </div>
+
+                                    <div class="col-12" style="overflow-y: auto;">
+                                        
+                                        <h3 class="d-flex align-items-center gap-3 mt-4"><span>Mature Entry Route <small style="font-size: 20px;">(done on case-by-case evaluation basis only):</small></span></h3>
+
+                                        <ul class="ps-0">
+                                            <li class="d-flex align-items-center gap-3 mb-3">
+                                                <span class="entry-check-mark"><i class="fa-solid fa-check"></i></span> <span>Candidates without any prior tertiary education and qualification should possess at least 10 years of professional working experience in the field of Business, Management, or related areas of work.</span>
+                                            </li>
+
+                                            <li class="d-flex align-items-center gap-3 mb-3">
+                                                <span class="entry-check-mark"><i class="fa-solid fa-check"></i></span> <span>Candidates  who have completed HND Level 4 (Diploma) should possess at least 7 years of professional working experience in the field of Business, Management, or related areas of work.</span>
+                                            </li>
+
+                                            <li class="d-flex align-items-center gap-3 mb-3">
+                                                <span class="entry-check-mark"><i class="fa-solid fa-check"></i></span> <span>Candidates who have completed HND Level 5 (Higher Diploma) should possess at least 4 years of professional working experience in the field of Business, Management, or related areas of working experience.</span>
+                                            </li>
+                                        </ul>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                
+               
+            </div>
+
+        </div>
+
+    </section>
+    <!-- entry requirement section end -->
+
+
+    <!-- modules section start -->
+    <section style="background: #e0e0e0;">
+        <!-- modules -->
+        <!-- Modules -->
+        <!-- module 1 -->
+        <!-- <div class="container">
+
+            <h4 class="text-capitalize fw-bold  fs-1 text-center mb-5" style="color: #265367;">Modules</h4>
+
+            <div class="accordion" id="modulesAccordion">
+
+                <div class="row">
+
+                    <div class="col-md-6 col-sm-12 mb-3">
+                        
+                        <div class="accordion-item bg-white rounded-3 shadow-sm">
+                            <h2 class="accordion-header" id="reqModule1">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapse1" aria-expanded="false" aria-controls="collapse1">
+                                    M-971: Introduction to Human Rights [9ECT]
+                                </button>
+                            </h2>
+
+
+                            <div id="collapse1" class="accordion-collapse collapse" aria-labelledby="reqModule1"
+                                data-bs-parent="#modulesAccordion">
+                                <div class="accordion-body">
+                                    A detailed look into international human rights frameworks, conventions, and
+                                    enforcement mechanisms.
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-sm-12 mb-3">
+                        
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="module2">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                                    Gender & Society
+                                </button>
+                            </h2>
+                            <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="module2"
+                                data-bs-parent="#modulesAccordion">
+                                <div class="accordion-body">
+                                    Explore the dynamics of gender in various social, cultural, and political contexts.
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="col-md-6 col-sm-12 mb-3">
+                        
+                        <div class="accordion-item bg-white rounded-3 shadow-sm">
+                            <h2 class="accordion-header" id="Module3">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+                                    M-971: Introduction to Human Rights [9ECT]
+                                </button>
+                            </h2>
+
+                            <div id="collapse3" class="accordion-collapse collapse" aria-labelledby="Module3"
+                                data-bs-parent="#modulesAccordion">
+                                <div class="accordion-body">
+                                    Explore the dynamics of gender in various social, cultural, and political contexts.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-sm-12 mb-3">
+                  
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="module4">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
+                                    Gender & Society
+                                </button>
+                            </h2>
+                            <div id="collapse4" class="accordion-collapse collapse" aria-labelledby="module4"
+                                data-bs-parent="#modulesAccordion">
+                                <div class="accordion-body">
+                                    Explore the dynamics of gender in various social, cultural, and political contexts.
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="col-md-6 col-sm-12 mb-3">
+                      
+                        <div class="accordion-item bg-white rounded-3 shadow-sm">
+                            <h2 class="accordion-header" id="reqModule5">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
+                                    M-971: Introduction to Human Rights [9ECT]
+                                </button>
+                            </h2>
+
+
+                            <div id="collapse5" class="accordion-collapse collapse" aria-labelledby="reqModule5"
+                                data-bs-parent="#modulesAccordion">
+                                <div class="accordion-body">
+                                    A detailed look into international human rights frameworks, conventions, and
+                                    enforcement mechanisms.
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-sm-12 mb-3">
+                     
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="module6">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapse6" aria-expanded="false" aria-controls="collapse6">
+                                    Gender & Society
+                                </button>
+                            </h2>
+                            <div id="collapse6" class="accordion-collapse collapse" aria-labelledby="module6"
+                                data-bs-parent="#modulesAccordion">
+                                <div class="accordion-body">
+                                    Explore the dynamics of gender in various social, cultural, and political contexts.
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>  -->
+
+
+        <div class="container">
+
+            <div class="higher-faq-sec" style="padding: 80px 0;">
+                <h4 class="text-capitalize fw-bold fs-1 text-center mb-5" style="color: #265367;">Modules</h4>
+
+                <div class="accordion" id="FAQAccordion">
+
+
+
+                    <div class="row">
+
+                        <div class="col-12 mb-3">
+                            <!-- module 1 -->
+                            <div class="accordion-item bg-transparent border-0">
+                                <h2 class="accordion-header" id="reqModule1">
+                                    <button class="accordion-button faq-acc-btn collapsed fw-bold" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#faqcollapse1" aria-expanded="false"
+                                        aria-controls="faqcollapse1">
+                                        M-971: Introduction to Human Rights [9ECT]
+
+                                        <span class="ms-auto"><i class="fa-solid fa-plus ms-auto toggle-icon"></i></span>
+                                    </button>
+                                </h2>
+
+
+                                <div id="faqcollapse1" class="accordion-collapse collapse"
+                                    aria-labelledby="faqcollapse1" data-bs-parent="#FAQAccordion">
+                                    <div class="accordion-body">
+                                        A detailed look into international human rights frameworks, conventions, and
+                                        enforcement mechanisms.  A detailed look into international human rights frameworks, conventions, and
+                                        enforcement mechanisms.  A detailed look into international human rights frameworks, conventions, and
+                                        enforcement mechanisms.  A detailed look into international human rights frameworks, conventions, and
+                                        enforcement mechanisms.
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="col-12 mb-3">
+                            <!-- module 1 -->
+                            <div class="accordion-item bg-transparent border-0">
+                                <h2 class="accordion-header" id="reqModule2">
+                                    <button class="accordion-button faq-acc-btn collapsed fw-bold" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#faqcollapse2" aria-expanded="false"
+                                        aria-controls="faqcollapse2">
+                                        M-971: Introduction to Human Rights [9ECT]
+
+                                        <span class="ms-auto"><i class="fa-solid fa-plus ms-auto toggle-icon"></i></span>
+                                    </button>
+                                </h2>
+
+
+                                <div id="faqcollapse2" class="accordion-collapse collapse"
+                                    aria-labelledby="faqcollapse2" data-bs-parent="#FAQAccordion">
+                                    <div class="accordion-body">
+                                        A detailed look into international human rights frameworks, conventions, and
+                                        enforcement mechanisms.  A detailed look into international human rights frameworks, conventions, and
+                                        enforcement mechanisms.  A detailed look into international human rights frameworks, conventions, and
+                                        enforcement mechanisms.  A detailed look into international human rights frameworks, conventions, and
+                                        enforcement mechanisms.
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="col-12 mb-3">
+                            <!-- module 1 -->
+                            <div class="accordion-item bg-transparent border-0">
+                                <h2 class="accordion-header" id="reqModule3">
+                                    <button class="accordion-button faq-acc-btn collapsed fw-bold" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#faqcollapse3" aria-expanded="false"
+                                        aria-controls="faqcollapse3">
+                                        M-971: Introduction to Human Rights [9ECT]
+
+                                        <span class="ms-auto"><i class="fa-solid fa-plus ms-auto toggle-icon"></i></span>
+                                    </button>
+                                </h2>
+
+
+                                <div id="faqcollapse3" class="accordion-collapse collapse"
+                                    aria-labelledby="faqcollapse3" data-bs-parent="#FAQAccordion">
+                                    <div class="accordion-body">
+                                        A detailed look into international human rights frameworks, conventions, and
+                                        enforcement mechanisms.  A detailed look into international human rights frameworks, conventions, and
+                                        enforcement mechanisms.  A detailed look into international human rights frameworks, conventions, and
+                                        enforcement mechanisms.  A detailed look into international human rights frameworks, conventions, and
+                                        enforcement mechanisms.
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="col-12 mb-3">
+                            <!-- module 1 -->
+                            <div class="accordion-item bg-transparent border-0">
+                                <h2 class="accordion-header" id="reqModule4">
+                                    <button class="accordion-button faq-acc-btn collapsed fw-bold" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#faqcollapse4" aria-expanded="false"
+                                        aria-controls="faqcollapse4">
+                                        M-971: Introduction to Human Rights [9ECT]
+
+                                        <span class="ms-auto"><i class="fa-solid fa-plus ms-auto toggle-icon"></i></span>
+                                    </button>
+                                </h2>
+
+
+                                <div id="faqcollapse4" class="accordion-collapse collapse"
+                                    aria-labelledby="faqcollapse4" data-bs-parent="#FAQAccordion">
+                                    <div class="accordion-body">
+                                        A detailed look into international human rights frameworks, conventions, and
+                                        enforcement mechanisms.  A detailed look into international human rights frameworks, conventions, and
+                                        enforcement mechanisms.  A detailed look into international human rights frameworks, conventions, and
+                                        enforcement mechanisms.  A detailed look into international human rights frameworks, conventions, and
+                                        enforcement mechanisms.
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="col-12 mb-3">
+                            <!-- module 1 -->
+                            <div class="accordion-item bg-transparent border-0">
+                                <h2 class="accordion-header" id="reqModule5">
+                                    <button class="accordion-button faq-acc-btn collapsed fw-bold" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#faqcollapse5" aria-expanded="false"
+                                        aria-controls="faqcollapse5">
+                                        M-971: Introduction to Human Rights [9ECT]
+
+                                        <span class="ms-auto"><i class="fa-solid fa-plus ms-auto toggle-icon"></i></span>
+                                    </button>
+                                </h2>
+
+
+                                <div id="faqcollapse5" class="accordion-collapse collapse"
+                                    aria-labelledby="faqcollapse5" data-bs-parent="#FAQAccordion">
+                                    <div class="accordion-body">
+                                        A detailed look into international human rights frameworks, conventions, and
+                                        enforcement mechanisms.  A detailed look into international human rights frameworks, conventions, and
+                                        enforcement mechanisms.  A detailed look into international human rights frameworks, conventions, and
+                                        enforcement mechanisms.  A detailed look into international human rights frameworks, conventions, and
+                                        enforcement mechanisms.
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="col-12 mb-3">
+                            <!-- module 1 -->
+                            <div class="accordion-item bg-transparent border-0">
+                                <h2 class="accordion-header" id="reqModule6">
+                                    <button class="accordion-button faq-acc-btn collapsed fw-bold" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#faqcollapse6" aria-expanded="false"
+                                        aria-controls="faqcollapse6">
+                                        M-971: Introduction to Human Rights [9ECT]
+
+                                        <span class="ms-auto"><i class="fa-solid fa-plus ms-auto toggle-icon"></i></span>
+                                    </button>
+                                </h2>
+
+
+                                <div id="faqcollapse6" class="accordion-collapse collapse"
+                                    aria-labelledby="faqcollapse6" data-bs-parent="#FAQAccordion">
+                                    <div class="accordion-body">
+                                        A detailed look into international human rights frameworks, conventions, and
+                                        enforcement mechanisms.  A detailed look into international human rights frameworks, conventions, and
+                                        enforcement mechanisms.  A detailed look into international human rights frameworks, conventions, and
+                                        enforcement mechanisms.  A detailed look into international human rights frameworks, conventions, and
+                                        enforcement mechanisms.
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+            </div>
+
+        </div>
+        
+    </section>
+    <!-- modules section end -->
+
+
+    <!-- details section start -->
+    <section class="details-v2 py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold fs-1" style="color: #265367;">Essential Course Details</h2>
+                <p class="lead text-muted">Everything you need to know about our grading system, course structure, and application requirements.</p>
+            </div>
+
+            <div class="row g-4 justify-content-center">
+
+                <div class="col-lg-4 col-md-6">
+
+                    <div class="details-panel h-100 shadow-sm border-0 rounded-1 overflow-hidden">
+
+                        <div class="details-icon text-white p-3 d-flex align-items-center justify-content-center">
+                            <i class="fa-solid fa-chart-bar fa-2x"></i>
+                        </div>
+
+                        <div class="details-content p-4">
+                            <h4 class="mb-3 fw-bold text-center">Grading System</h4>
+                            <ul class="list-unstyled mb-0">
+                                <li class="d-flex justify-content-between align-items-center mb-2">
+                                    <span>Higher Distinction</span>
+                                    <span class="badge text-dark fw-bold">90–100%</span>
+                                </li>
+                                <li class="d-flex justify-content-between align-items-center mb-2">
+                                    <span>Distinction</span>
+                                    <span class="badge text-dark fw-bold">80–89%</span>
+                                </li>
+                                <li class="d-flex justify-content-between align-items-center mb-2">
+                                    <span>First Division</span>
+                                    <span class="badge text-dark fw-bold">70–79%</span>
+                                </li>
+                                <li class="d-flex justify-content-between align-items-center mb-2">
+                                    <span>Second Division</span>
+                                    <span class="badge text-dark fw-bold">60–69%</span>
+                                </li>
+                                <li class="d-flex justify-content-between align-items-center mb-2">
+                                    <span>Satisfactory</span>
+                                    <span class="badge text-dark fw-bold">50–59%</span>
+                                </li>
+                                <li class="d-flex justify-content-between align-items-center">
+                                    <span>Fail</span>
+                                    <span class="badge text-dark fw-bold">Below 50%</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="details-panel h-100 shadow-sm border-0 rounded-1 overflow-hidden">
+                        <div class="details-icon text-white p-3 d-flex align-items-center justify-content-center">
+                            <i class="fa-solid fa-book-open fa-2x"></i>
+                        </div>
+                        <div class="details-content p-4">
+                            <h4 class="mb-3 fw-bold text-center">Course Overview</h4>
+                            <ul class="list-unstyled mb-0">
+                                <li class="d-flex justify-content-between align-items-center mb-2">
+                                    <span>Course Level</span>
+                                    <span class="fw-bold">7</span>
+                                </li>
+                                <li class="d-flex justify-content-between align-items-center mb-2">
+                                    <span>Total Modules</span>
+                                    <span class="fw-bold">12</span>
+                                </li>
+                                <li class="d-flex justify-content-between align-items-center mb-2">
+                                    <span>Units per Module</span>
+                                    <span class="fw-bold">6</span>
+                                </li>
+                                <li class="d-flex justify-content-between align-items-center mb-2">
+                                    <span>Total Units</span>
+                                    <span class="fw-bold">72</span>
+                                </li>
+                                <li class="d-flex justify-content-between align-items-center mb-2">
+                                    <span>Total ECT</span>
+                                    <span class="fw-bold">90</span>
+                                </li>
+                                <li class="d-flex justify-content-between align-items-center mb-2">
+                                    <span>Study Mode</span>
+                                    <span class="fw-bold">Self-Paced Learning</span>
+                                </li>
+                                <li class="d-flex justify-content-between align-items-center mb-2">
+                                    <span>Duration</span>
+                                    <span class="fw-bold">12–18 Months</span>
+                                </li>
+                                <li class="d-flex justify-content-between align-items-center mb-2">
+                                    <span>Assignments</span>
+                                    <span class="fw-bold">1 per Unit</span>
+                                </li>
+                                <li class="d-flex justify-content-between align-items-center">
+                                    <span>Action Research Paper</span>
+                                    <span class="fw-bold">Required</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="details-panel h-100 shadow-sm border-0 rounded-1 overflow-hidden">
+                        <div class="details-icon text-white p-3 d-flex align-items-center justify-content-center">
+                            <i class="fa-solid fa-folder-open fa-2x"></i>
+                        </div>
+                        <div class="details-content p-4">
+                            <h4 class="mb-3 fw-bold text-center">Required Documents</h4>
+                            <ul class="list-unstyled mb-0">
+                                <li class="d-flex justify-content-between align-items-center mb-2">
+                                    <span>Education Certificates</span>
+                                    <i class="fa-solid fa-check text-success"></i>
+                                </li>
+                                <li class="d-flex justify-content-between align-items-center mb-2">
+                                    <span>Latest CV/Resume</span>
+                                    <i class="fa-solid fa-check text-success"></i>
+                                </li>
+                                <li class="d-flex justify-content-between align-items-center mb-2">
+                                    <span>Personal Statement</span>
+                                    <span class="text-muted">(500 words)</span>
+                                </li>
+                                <li class="d-flex justify-content-between align-items-center mb-2">
+                                    <span>Passport Copy</span>
+                                    <i class="fa-solid fa-check text-success"></i>
+                                </li>
+                                <li class="d-flex justify-content-between align-items-center mb-2">
+                                    <span>Passport-size Photo</span>
+                                    <span class="text-muted">(JPG format)</span>
+                                </li>
+                                <li class="d-flex justify-content-between align-items-center">
+                                    <span>Reference Letters</span>
+                                    <i class="fa-solid fa-check text-success"></i>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    <!-- details section end -->
+
+<div class="main_container">
+  <div class="sidebar">
+    <ul id="menu">
+      <li data-target="section1" class="active">Research</li>
+      <li data-target="section2">Case Study</li>
+      <li data-target="section3">White Paper</li>
+    </ul>
+  </div>
+  <div class="content">
+    <div id="section1" class="section">🔬 Research content here</div>
+    <div id="section2" class="section">📚 Case study content here</div>
+    <div id="section3" class="section">📄 White paper content here</div>
+  </div>
+</div>
+
+
+
+
+    <!-- how to apply section start -->
+    <section id="higher-edu-how-to-apply" style="background-color: #e0e0e0; padding: 90px 0;">
+                <div class="container" id="higher-edu-how-to-apply">
+
+                    <h4 class="mb-4 fw-bold fs-1 text-center" style="color: #265367;">How To Apply</h4>
+                    <div class="apply-header-box">
+
+                        <p>Take the Next Step in Your Career by applying in this programme that aligns with your aspirations and unlock new opportunities for growth and success. To apply for the Master’s programme with partial scholarship offered, candidates are requested to submit the following documents:</p>
+
+                        <div class="hovered-app-box">
+                            <p class="mb-0">Required Documents</p>
+                        </div>
+                    </div>
+
+                    <div class="clearfix"></div>
+
+                    <div class="apply-step-sec">
+
+                        <div class="apply-step-box">
+
+                            <div class="row align-items-center apply-step-single-box">
+                                <div class="col-md-2 col-sm-12 apply-step-box-left">
+                                    <h5>Preperation Step</h5>
+                                </div>
+                                <div class="col-md-10 col-sm-12 apply-step-box-right">
+                                    <h5 class="mt-4">Community Manager</h5>
+
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis, natus rem fugiat quidem explicabo facilis neque deleniti, temporibus animi sit tenetur ratione. Totam vero provident blanditiis est aliquam ex voluptatem tempore, eum dignissimos voluptatibus, beatae voluptatum cumque modi maiores ducimus.</p>
+                                </div>
+                            </div>
+
+                            <div class="row align-items-center apply-step-single-box">
+                                <div class="col-md-2 col-sm-12 apply-step-box-left">
+                                    <h5>Preperation Step</h5>
+                                </div>
+                                <div class="col-md-10 col-sm-12 apply-step-box-right">
+                                    <h5 class="mt-4">Community Manager</h5>
+
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis, natus rem fugiat quidem explicabo facilis neque deleniti, temporibus animi sit tenetur ratione. Totam vero provident blanditiis est aliquam ex voluptatem tempore, eum dignissimos voluptatibus, beatae voluptatum cumque modi maiores ducimus.</p>
+                                </div>
+                            </div>
+
+                            <div class="row align-items-center apply-step-single-box">
+                                <div class="col-md-2 col-sm-12 apply-step-box-left">
+                                    <h5>Preperation Step</h5>
+                                </div>
+                                <div class="col-md-10 col-sm-12 apply-step-box-right">
+                                    <h5 class="mt-4">Community Manager</h5>
+
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis, natus rem fugiat quidem explicabo facilis neque deleniti, temporibus animi sit tenetur ratione. Totam vero provident blanditiis est aliquam ex voluptatem tempore, eum dignissimos voluptatibus, beatae voluptatum cumque modi maiores ducimus.</p>
+                                </div>
+                            </div>
+
+                            <div class="row align-items-center apply-step-single-box">
+                                <div class="col-md-2 col-sm-12 apply-step-box-left">
+                                    <h5>Preperation Step</h5>
+                                </div>
+                                <div class="col-md-10 col-sm-12 apply-step-box-right">
+                                    <h5 class="mt-4">Community Manager</h5>
+
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis, natus rem fugiat quidem explicabo facilis neque deleniti, temporibus animi sit tenetur ratione. Totam vero provident blanditiis est aliquam ex voluptatem tempore, eum dignissimos voluptatibus, beatae voluptatum cumque modi maiores ducimus.</p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <h4 class="mb-2 mt-5 fw-bold fs-1 text-center" style="color: #265367;">Apply Now</h4>
+
+                    <div class="apply-header-box2">
+
+                        <div class="ahb-icon text-center mb-3 mx-auto">
+                            <i class="fa-solid fa-paper-plane"></i>
+                        </div>
+
+                        
+
+                        <p>Please send the aforementioned Documents to <a href="mailto:info@higher-edu.uk" style="font-weight: 500; color: #265367;">info@higher-edu.uk</a> <br> Email to receive a complimentary assessment and verification of your documents, as well as to initiate the application process.<p>
+
+                    </div>
+
+                    <div class="clearfix"></div>
+
+                </div>
+    </section>
+    <!-- how to apply section end -->
+
+    
+    <!-- FAQ section start -->
+    <section style="background-color: #f8f9fa; padding: 40px 0;">
+
+        <!-- <div class="container">
+
+            <div class="higher-faq-sec" style="padding: 80px 0;">
+                <h4 class="text-uppercase fw-bold fs-1 text-center mb-5" style="color: #265367;">Faq</h4>
+
+                <div class="accordion" id="FAQAccordion">
+
+
+
+                    <div class="row">
+
+                        <div class="col-12 mb-3">
+                            
+                            <div class="accordion-item bg-transparent border-0">
+                                <h2 class="accordion-header" id="reqModule1">
+                                    <button class="accordion-button faq-acc-btn collapsed fw-bold" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#faqcollapse1" aria-expanded="false"
+                                        aria-controls="faqcollapse1">
+                                        M-971: Introduction to Human Rights [9ECT]
+
+                                        <span class="ms-auto"><i class="fa-solid fa-plus ms-auto toggle-icon"></i></span>
+                                    </button>
+                                </h2>
+
+
+                                <div id="faqcollapse1" class="accordion-collapse collapse"
+                                    aria-labelledby="faqcollapse1" data-bs-parent="#FAQAccordion">
+                                    <div class="accordion-body">
+                                        A detailed look into international human rights frameworks, conventions, and
+                                        enforcement mechanisms.  A detailed look into international human rights frameworks, conventions, and
+                                        enforcement mechanisms.  A detailed look into international human rights frameworks, conventions, and
+                                        enforcement mechanisms.  A detailed look into international human rights frameworks, conventions, and
+                                        enforcement mechanisms.
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="col-12 mb-3">
+                            
+                            <div class="accordion-item bg-transparent border-0">
+                                <h2 class="accordion-header" id="reqModule2">
+                                    <button class="accordion-button faq-acc-btn collapsed fw-bold" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#faqcollapse2" aria-expanded="false"
+                                        aria-controls="faqcollapse2">
+                                        M-971: Introduction to Human Rights [9ECT]
+
+                                        <span class="ms-auto"><i class="fa-solid fa-plus ms-auto toggle-icon"></i></span>
+                                    </button>
+                                </h2>
+
+
+                                <div id="faqcollapse2" class="accordion-collapse collapse"
+                                    aria-labelledby="faqcollapse2" data-bs-parent="#FAQAccordion">
+                                    <div class="accordion-body">
+                                        A detailed look into international human rights frameworks, conventions, and
+                                        enforcement mechanisms.  A detailed look into international human rights frameworks, conventions, and
+                                        enforcement mechanisms.  A detailed look into international human rights frameworks, conventions, and
+                                        enforcement mechanisms.  A detailed look into international human rights frameworks, conventions, and
+                                        enforcement mechanisms.
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="col-12 mb-3">
+                            
+                            <div class="accordion-item bg-transparent border-0">
+                                <h2 class="accordion-header" id="reqModule3">
+                                    <button class="accordion-button faq-acc-btn collapsed fw-bold" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#faqcollapse3" aria-expanded="false"
+                                        aria-controls="faqcollapse3">
+                                        M-971: Introduction to Human Rights [9ECT]
+
+                                        <span class="ms-auto"><i class="fa-solid fa-plus ms-auto toggle-icon"></i></span>
+                                    </button>
+                                </h2>
+
+
+                                <div id="faqcollapse3" class="accordion-collapse collapse"
+                                    aria-labelledby="faqcollapse3" data-bs-parent="#FAQAccordion">
+                                    <div class="accordion-body">
+                                        A detailed look into international human rights frameworks, conventions, and
+                                        enforcement mechanisms.  A detailed look into international human rights frameworks, conventions, and
+                                        enforcement mechanisms.  A detailed look into international human rights frameworks, conventions, and
+                                        enforcement mechanisms.  A detailed look into international human rights frameworks, conventions, and
+                                        enforcement mechanisms.
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="col-12 mb-3">
+                            
+                            <div class="accordion-item bg-transparent border-0">
+                                <h2 class="accordion-header" id="reqModule4">
+                                    <button class="accordion-button faq-acc-btn collapsed fw-bold" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#faqcollapse4" aria-expanded="false"
+                                        aria-controls="faqcollapse4">
+                                        M-971: Introduction to Human Rights [9ECT]
+
+                                        <span class="ms-auto"><i class="fa-solid fa-plus ms-auto toggle-icon"></i></span>
+                                    </button>
+                                </h2>
+
+
+                                <div id="faqcollapse4" class="accordion-collapse collapse"
+                                    aria-labelledby="faqcollapse4" data-bs-parent="#FAQAccordion">
+                                    <div class="accordion-body">
+                                        A detailed look into international human rights frameworks, conventions, and
+                                        enforcement mechanisms.  A detailed look into international human rights frameworks, conventions, and
+                                        enforcement mechanisms.  A detailed look into international human rights frameworks, conventions, and
+                                        enforcement mechanisms.  A detailed look into international human rights frameworks, conventions, and
+                                        enforcement mechanisms.
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="col-12 mb-3">
+                            
+                            <div class="accordion-item bg-transparent border-0">
+                                <h2 class="accordion-header" id="reqModule5">
+                                    <button class="accordion-button faq-acc-btn collapsed fw-bold" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#faqcollapse5" aria-expanded="false"
+                                        aria-controls="faqcollapse5">
+                                        M-971: Introduction to Human Rights [9ECT]
+
+                                        <span class="ms-auto"><i class="fa-solid fa-plus ms-auto toggle-icon"></i></span>
+                                    </button>
+                                </h2>
+
+
+                                <div id="faqcollapse5" class="accordion-collapse collapse"
+                                    aria-labelledby="faqcollapse5" data-bs-parent="#FAQAccordion">
+                                    <div class="accordion-body">
+                                        A detailed look into international human rights frameworks, conventions, and
+                                        enforcement mechanisms.  A detailed look into international human rights frameworks, conventions, and
+                                        enforcement mechanisms.  A detailed look into international human rights frameworks, conventions, and
+                                        enforcement mechanisms.  A detailed look into international human rights frameworks, conventions, and
+                                        enforcement mechanisms.
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="col-12 mb-3">
+                           
+                            <div class="accordion-item bg-transparent border-0">
+                                <h2 class="accordion-header" id="reqModule6">
+                                    <button class="accordion-button faq-acc-btn collapsed fw-bold" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#faqcollapse6" aria-expanded="false"
+                                        aria-controls="faqcollapse6">
+                                        M-971: Introduction to Human Rights [9ECT]
+
+                                        <span class="ms-auto"><i class="fa-solid fa-plus ms-auto toggle-icon"></i></span>
+                                    </button>
+                                </h2>
+
+
+                                <div id="faqcollapse6" class="accordion-collapse collapse"
+                                    aria-labelledby="faqcollapse6" data-bs-parent="#FAQAccordion">
+                                    <div class="accordion-body">
+                                        A detailed look into international human rights frameworks, conventions, and
+                                        enforcement mechanisms.  A detailed look into international human rights frameworks, conventions, and
+                                        enforcement mechanisms.  A detailed look into international human rights frameworks, conventions, and
+                                        enforcement mechanisms.  A detailed look into international human rights frameworks, conventions, and
+                                        enforcement mechanisms.
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+            </div>
+
+        </div> -->
+
+
+
+        <div class="container">
+
+            <h4 class="text-uppercase fw-bold  fs-1 text-center mb-5" style="color: #265367;">Faq</h4>
+
+            <div class="accordion" id="modulesAccordion">
+
+                <div class="row">
+
+                    <div class="col-md-6 col-sm-12 mb-3">
+                        
+                        <div class="accordion-item bg-white rounded-3 shadow-sm">
+                            <h2 class="accordion-header" id="reqModule1">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapse1" aria-expanded="false" aria-controls="collapse1">
+                                    M-971: Introduction to Human Rights [9ECT]
+                                </button>
+                            </h2>
+
+
+                            <div id="collapse1" class="accordion-collapse collapse" aria-labelledby="reqModule1"
+                                data-bs-parent="#modulesAccordion">
+                                <div class="accordion-body">
+                                    A detailed look into international human rights frameworks, conventions, and
+                                    enforcement mechanisms.
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-sm-12 mb-3">
+                        
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="module2">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                                    Gender & Society
+                                </button>
+                            </h2>
+                            <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="module2"
+                                data-bs-parent="#modulesAccordion">
+                                <div class="accordion-body">
+                                    Explore the dynamics of gender in various social, cultural, and political contexts.
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="col-md-6 col-sm-12 mb-3">
+                        
+                        <div class="accordion-item bg-white rounded-3 shadow-sm">
+                            <h2 class="accordion-header" id="Module3">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+                                    M-971: Introduction to Human Rights [9ECT]
+                                </button>
+                            </h2>
+
+                            <div id="collapse3" class="accordion-collapse collapse" aria-labelledby="Module3"
+                                data-bs-parent="#modulesAccordion">
+                                <div class="accordion-body">
+                                    Explore the dynamics of gender in various social, cultural, and political contexts.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-sm-12 mb-3">
+                  
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="module4">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
+                                    Gender & Society
+                                </button>
+                            </h2>
+                            <div id="collapse4" class="accordion-collapse collapse" aria-labelledby="module4"
+                                data-bs-parent="#modulesAccordion">
+                                <div class="accordion-body">
+                                    Explore the dynamics of gender in various social, cultural, and political contexts.
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="col-md-6 col-sm-12 mb-3">
+                      
+                        <div class="accordion-item bg-white rounded-3 shadow-sm">
+                            <h2 class="accordion-header" id="reqModule5">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
+                                    M-971: Introduction to Human Rights [9ECT]
+                                </button>
+                            </h2>
+
+
+                            <div id="collapse5" class="accordion-collapse collapse" aria-labelledby="reqModule5"
+                                data-bs-parent="#modulesAccordion">
+                                <div class="accordion-body">
+                                    A detailed look into international human rights frameworks, conventions, and
+                                    enforcement mechanisms.
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-sm-12 mb-3">
+                     
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="module6">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapse6" aria-expanded="false" aria-controls="collapse6">
+                                    Gender & Society
+                                </button>
+                            </h2>
+                            <div id="collapse6" class="accordion-collapse collapse" aria-labelledby="module6"
+                                data-bs-parent="#modulesAccordion">
+                                <div class="accordion-body">
+                                    Explore the dynamics of gender in various social, cultural, and political contexts.
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </section>
+    <!-- FAQ section end-->
+
+
+    <!-- stepper section start -->
+    <section id="stepperSec">
+
+        <div class="container">
+
+            <div class="stepper-container">
+        
+                <div class="step" onclick="showContent(0)">
+                    <div class="circle">📄</div>
+                    <div class="step-title">I'm thinking of applying</div>
+                </div>
+        
+                <div class="step" onclick="showContent(1)">
+                    <div class="circle">🧾</div>
+                    <div class="step-title">I've applied</div>
+                </div>
+        
+                <div class="step" onclick="showContent(2)">
+                    <div class="circle">🎓</div>
+                    <div class="step-title">I've got an offer</div>
+                </div>
+        
+                <div class="step" onclick="showContent(3)">
+                    <div class="circle">✈️</div>
+                    <div class="step-title">I'm on my way to Solent</div>
+                </div>
+        
+            </div>
+        
+            <div id="content-0" class="stepper-content-box active">
+                <h3>Thinking of applying</h3>
+                <p>Here’s everything you need to know to decide if Solent is the right fit for you.</p>
+            </div>
+        
+            <div id="content-1" class="stepper-content-box">
+                <h3>You've applied</h3>
+                <p>Now that you’ve applied, here's what happens next in your journey.</p>
+            </div>
+        
+            <div id="content-2" class="stepper-content-box">
+                <h3>You've got an offer</h3>
+                <p>Congrats! Let’s guide you through accepting the offer and planning ahead.</p>
+            </div>
+        
+            <div id="content-3" class="stepper-content-box">
+                <h3>On your way to Solent</h3>
+                <p>Start preparing for your move — travel tips, packing lists, and what to expect on arrival.</p>
+            </div>
+
+        </div>
+
+    </section>
+    <!-- stepper section end -->
+
+
+
+    <!-- bootstrap cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous">
+    </script>
+    <!-- bootstrap cdn -->
+
+    <!-- font awesome cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/js/all.min.js" integrity="sha512-b+nQTCdtTBIRIbraqNEwsjB6UvL3UEMkXnhzd8awtCYh0Kcsjl9uEgwVFVbhoj3uu1DO1ZMacNvLoyJJiNfcvg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- font awesome cdn -->
+
+    <!-- swiper cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- swiper cdn -->
+
+    <script src="./js/main.js"></script>
+
+</body>
+
+</html>
