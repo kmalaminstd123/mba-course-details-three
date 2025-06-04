@@ -64,36 +64,34 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
+const items = document.querySelectorAll("#menu li");
+const sections = document.querySelectorAll(".det_cont_section");
+const content = document.querySelector(".det_cont_content");
 
-  const items = document.querySelectorAll("#menu li");
-  const sections = document.querySelectorAll(".section");
-  const content = document.querySelector(".content");
-
-  // Click to scroll
-  items.forEach(item => {
-    item.addEventListener("click", () => {
-      const targetId = item.dataset.target;
-      const targetEl = document.getElementById(targetId);
-      content.scrollTo({
-        top: targetEl.offsetTop - content.offsetTop,
-        behavior: "smooth"
-      });
+// Smooth scroll when menu item is clicked
+items.forEach(item => {
+  item.addEventListener("click", () => {
+    const targetId = item.dataset.target;
+    const targetEl = document.getElementById(targetId);
+    content.scrollTo({
+      top: targetEl.offsetTop - content.offsetTop,
+      behavior: "smooth"
     });
   });
+});
 
-  // Scroll tracking
-  content.addEventListener("scroll", () => {
-    const scrollPos = content.scrollTop;
+// Track scroll and update active menu item
+content.addEventListener("scroll", () => {
+  sections.forEach((section) => {
+    const rect = section.getBoundingClientRect();
+    const contentRect = content.getBoundingClientRect();
 
-    sections.forEach(section => {
-      const relativeTop = section.offsetTop - content.offsetTop;
-      const sectionHeight = section.offsetHeight;
-      const id = section.id;
-
-      if (scrollPos >= relativeTop && scrollPos < relativeTop + sectionHeight) {
-        items.forEach(i => i.classList.remove("active"));
-        const activeItem = document.querySelector(`#menu li[data-target="${id}"]`);
-        if (activeItem) activeItem.classList.add("active");
-      }
-    });
+    // Check if section top is visible within the scroll container
+    if (rect.top >= contentRect.top && rect.top < contentRect.bottom) {
+      items.forEach((i) => i.classList.remove("active"));
+      const activeItem = document.querySelector(`#menu li[data-target="${section.id}"]`);
+      if (activeItem) activeItem.classList.add("active");
+    }
   });
+});
+
