@@ -862,8 +862,84 @@ li {
     background-color: var(--primary-blue);
 }
 
-/* scroll system */
+/* scroll system detials */
 
+.details_main_container {
+    display: flex;
+    height: 80vh;
+    overflow: hidden;
+    /* Important to keep layout fixed height */
+}
+
+.det_cont_sidebar {
+    width: 200px;
+    background-color: #f1f1f1;
+    overflow-y: auto;
+    padding: 1rem;
+}
+
+#menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#menu li {
+    padding: 10px;
+    cursor: pointer;
+    margin-bottom: 8px;
+    border-radius: 6px;
+    transition: background 0.3s;
+}
+
+#menu li.active {
+    background-color: #265367;
+    color: white;
+}
+
+.det_cont_content {
+    flex-grow: 1;
+    overflow-y: auto;
+    /* ✅ scrollable */
+    scroll-behavior: smooth;
+    padding: 1rem;
+    height: 80vh;
+
+    /* hide scrollbar */
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none;  /* IE and Edge */
+}
+
+
+.det_cont_content::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}
+
+
+.det_cont_section {
+    height: 83vh;
+    padding: 2rem;
+    box-sizing: border-box;
+}
+
+
+@media only screen and (max-width: 769px){
+
+    .details_main_container{
+        flex-direction: column;
+        height: auto;
+    }
+
+    .det_cont_sidebar {
+        width: 100%;
+        height: auto;
+    }
+
+    .det_cont_content{
+        width: 100%;
+        height: 80dvh;
+    }
+}
 
 
 /* details section end */
