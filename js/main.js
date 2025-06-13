@@ -47,23 +47,12 @@ function showContent(index) {
     });
 }
 
-// scroll certified logo
-document.addEventListener('DOMContentLoaded', () => {
-    const certTag = document.querySelector('.course-cert-tag');
-
-    if (!certTag) return; // prevent error if not found
-
-    window.addEventListener('scroll', () => {
-        const scrolly = window.scrollY;
-        const rotationDeg = Math.min(scrolly * 0.2, 360);
-
-        // Add 'deg' here
-        certTag.style.transform = `rotate(${rotationDeg}deg)`;
-    });
-})
 
 
 
+
+
+// ======================== details scrollbar js start ======================== //
 const items = document.querySelectorAll("#menu li");
 const sections = document.querySelectorAll(".det_cont_section");
 const content = document.querySelector(".det_cont_content");
@@ -94,4 +83,4 @@ content.addEventListener("scroll", () => {
     }
   });
 });
-
+// ======== details scrollbar js start
